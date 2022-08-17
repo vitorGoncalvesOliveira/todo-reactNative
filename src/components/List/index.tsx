@@ -1,7 +1,7 @@
 import { View , FlatList, Text, Image, TouchableOpacity } from "react-native";
 import CheckBox from 'expo-checkbox';
 import { EmptyList } from '../EmptList';
-import Trash from '../../../assets/trash.png';
+import { Feather } from '@expo/vector-icons';
 import { styles } from './styles';
 import { Tasks } from '../../types/task';
 
@@ -33,7 +33,7 @@ export function List({ taskList, doneTask, removeTask }: Props){
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.btnDelete}
                             onPress={() => removeTask(item.title)}>
-                            <Image style={styles.trashIcon} source={Trash}/>
+                            <Feather name="trash-2" size={25} color="#808080"/>
                         </TouchableOpacity>
                     </View>
                     ) }                

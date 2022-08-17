@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
         backgroundColor:'#4EA8DE',
         flex: 1,
         marginRight: 20,
-        marginLeft: 20,
+        marginLeft: 10,
         borderRadius: 10,
     },
     buttonText: {

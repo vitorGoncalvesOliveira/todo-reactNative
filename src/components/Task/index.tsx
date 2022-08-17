@@ -1,5 +1,6 @@
 import { View, TextInput, TouchableOpacity, Text, Image } from 'react-native';
-import Icon from '../../../assets/plus.png';
+import { AntDesign } from '@expo/vector-icons';
+
 import { styles  } from './styles';
 import { useState } from 'react';
 
@@ -25,7 +26,7 @@ export function Task ({ addTask }: Props){
             <TouchableOpacity 
                 onPress={newTask}
                 style={ styles.addButton }>                
-                    <Image  source={Icon}/>
+                    <AntDesign  name='pluscircleo' size={20} color="white"/>
             </TouchableOpacity>
         </View>
     )
